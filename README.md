@@ -14,4 +14,4 @@ $("#myCustomElement").jComplete({
 				start: "Rule"});
 ```
 				
-feel free to contact me if you are interestet in collaborate developing.
+feel free to contact me if you are interested to support developing.
