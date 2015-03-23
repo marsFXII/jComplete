@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jcomplete.jquery.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+	<style>
+	input{
+	width:500px;height:30px;
+	background:transparent;
+	border: 1px solid grey;
+	}
+	
+	.jcompleteresults div{
+		width:200px;
+		height:20px;
+		padding:2px;
+		cursor:pointer;
+		}
+	.jcompleteresults div:hover{
+		background-color:#999999;
+		}
+	</style>
+	<script>
+	$(document).ready(function(){
+		$("#myinput").jComplete({rules: ['Rule = "IF" This "THEN" That', 
+						  'This = Event | Event "AND" This', 
+						  'Event = "EmailReceived" | "HDDload" ">" Digit Digit "%"', 
+						  'Digit =  "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"', 
+						  'y =  "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"', 
+						  'm =  "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"', 
+						  'd =  "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"', 
+						  'h =  "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"', 
+						  'i =  "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"', 
+						  's =  "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"', 
+						  'That =  Action | Action "," That', 
+						  'Action = "Popup" | "SendEmail" | "Shutdown" | "Delete" | "Start"'], start: "Rule"});
+	  });
+	</script>
+ </head>
+ <body>
+ 
+ <div style="width:500px;height:50px;top:50%;left:50%;position:absolute;margin-left:-250px;">
+	<div style="position:absolute;left:140px;top:-100px;font-family:Arvo;font-size:48px;color:#424242;text-shadow: 3px 3px 3px #aaa;"><span style="color:#eeee00;">j</span>Complete</div>
+	<input type="text" id="myinput" value="" />
+ </div>
+ 
+ </body>
+ </html>
