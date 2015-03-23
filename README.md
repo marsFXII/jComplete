@@ -1,8 +1,9 @@
-## jComplete
+# jComplete
 grammar autocomplete jQuery extension
 
-#How to use?
+##How to use?
 
+```
 $("#myCustomElement").jComplete({
         rules: ['Rule = "IF" This "THEN" That', 
 						  'This = Event | Event "AND" This', 
@@ -11,5 +12,6 @@ $("#myCustomElement").jComplete({
 						  'That =  Action | Action "," That', 
 						  'Action = "Popup" | "SendEmail" | "Shutdown" | "Delete" | "Start"'],
 				start: "Rule"});
+```
 				
-	feel free to contact me if you are interestet in collaborate developing.
+feel free to contact me if you are interestet in collaborate developing.
